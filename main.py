@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from careerpath_ai 🚀"}
+    return {"message": "CareerPath AI backend is running 🚀"}
