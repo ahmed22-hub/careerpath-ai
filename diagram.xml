@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mxfile host="app.diagrams.net" modified="2025-09-26T00:00:00.000Z" agent="5.0 (X11)" etag="12345" version="20.0.0" type="device">
+  <diagram id="diagram1" name="Architecture">
+    <mxGraphModel dx="1254" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- User -->
+        <mxCell id="2" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#2C3E50" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Frontend -->
+        <mxCell id="3" value="Frontend\n(React + Vite)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F6F3;strokeColor=#1ABC9C" vertex="1" parent="1">
+          <mxGeometry x="200" y="60" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Backend -->
+        <mxCell id="4" value="Backend\n(FastAPI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#F39C12" vertex="1" parent="1">
+          <mxGeometry x="420" y="60" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <!-- AI Layer -->
+        <mxCell id="5" value="AI Layer\n(NLP, HuggingFace)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#5B6BFF" vertex="1" parent="1">
+          <mxGeometry x="420" y="180" width="200" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Database -->
+        <mxCell id="6" value="Database\n(PostgreSQL)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F3F4;strokeColor=#7F8C8D" vertex="1" parent="1">
+          <mxGeometry x="420" y="300" width="160" height="80" as="geometry"/>
+        </mxCell>
+        <!-- DevOps -->
+        <mxCell id="7" value="DevOps\n(Docker, CI/CD, K8s)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3E0;strokeColor=#D35400" vertex="1" parent="1">
+          <mxGeometry x="200" y="300" width="180" height="80" as="geometry"/>
+        </mxCell>
+        <!-- External Integrations -->
+        <mxCell id="8" value="External Integrations\n(LinkedIn, Coursera, Job APIs)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5EEF8;strokeColor=#8E44AD" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="380" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Edges -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#555555" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#555555" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#555555" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#555555" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#555555" edge="1" parent="1" source="4" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#555555" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
